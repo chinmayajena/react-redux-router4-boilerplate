@@ -2,12 +2,13 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
+import styles from './style.css' 
 
 const App = () => (
   <div>
-    <header>
-      <Link to="/">Home</Link>
-      <Link to="/about-us">About</Link>
+    <header className={styles.header}>
+      <Link to="/" className="active">Home</Link>
+      <Link to="/about-us" >About</Link>
     </header>
 
     <main>
