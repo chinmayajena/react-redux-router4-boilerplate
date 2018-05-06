@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
 import Home from '../home'
 import About from '../about'
 import styles from './style.css' 
@@ -7,12 +7,12 @@ import styles from './style.css'
 const App = () => (
   <div>
     <header className={styles.header}>
-      <Link to="/" className="active">Home</Link>
-      <Link to="/about-us" >About</Link>
+      <NavLink to="/home" activeClassName="active">Home</NavLink>
+      <NavLink to="/about-us" activeClassName="active">About</NavLink>
     </header>
 
     <main>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/home" component={Home} />
       <Route exact path="/about-us" component={About} />
     </main>
   </div>
