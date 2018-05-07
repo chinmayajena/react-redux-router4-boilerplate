@@ -36,7 +36,7 @@ header {
   }
   
   /* Float the link section to the right */
-  header-right {
+  headerright {
     float: right;
   }
   

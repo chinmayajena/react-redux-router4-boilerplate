@@ -7,8 +7,10 @@ import styles from './style.css'
 const App = () => (
   <div>
     <header className={styles.header}>
+    <div className={styles.headerright}>
       <NavLink to="/home" activeClassName="active">Home</NavLink>
       <NavLink to="/about-us" activeClassName="active">About</NavLink>
+      </div>
     </header>
 
     <main>
